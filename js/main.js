@@ -26,20 +26,3 @@ const WEDDING = new Date("2026-11-19T17:00:00");
       $("s").textContent = Math.floor(t % 60);
     }
     tick(); setInterval(tick, 1000);
-
-    // Add to calendar
-    const pad = n => String(n).padStart(2, "0");
-    const fmt = d => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
-    $("cal").href = "data:text/calendar;charset=utf-8," + encodeURIComponent(
-      `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nSUMMARY:عقد قران ${COUPLE}\nDTSTART:${fmt(WEDDING)}\nDTEND:${fmt(new Date(WEDDING.getTime() + 8 * 3600e3))}\nEND:VEVENT\nEND:VCALENDAR`);
-
-    // RSVP (front-end only for now)
-    $("form").addEventListener("submit", e => {
-      e.preventDefault();
-      const f = new FormData(e.target);
-      $("thanks").textContent = f.get("att") === "yes"
-        ? `شكرًا ${f.get("name")}. نتطلع إلى مشاركتكم فرحتنا.`
-        : `شكرًا ${f.get("name")}. سنفتقدكم.`;
-      $("thanks").style.display = "block";
-      e.target.style.display = "none";
-    });
