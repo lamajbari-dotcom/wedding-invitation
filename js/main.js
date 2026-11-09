@@ -1,5 +1,5 @@
     /* ===== EDIT THESE ===== */
-    const WEDDING = new Date("2027-06-12T16:00:00");
+const WEDDING = new Date("2026-11-19T17:00:00");
     const COUPLE = "أحمد و سميحة";
     /* ===================== */
 
