@@ -10,6 +10,9 @@ const WEDDING = new Date("2026-11-19T17:00:00");
       $("intro").classList.add("open");
       document.body.classList.remove("locked");
       $("hero").classList.add("go");
+      $("wedding-audio").play().catch(error => {
+        console.error("Could not play the wedding audio.", error);
+      });
     }, { once: true });
 
     // Scroll cue: fades out once the guest scrolls, returns at the top
