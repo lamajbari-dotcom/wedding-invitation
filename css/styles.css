@@ -282,44 +282,58 @@
       color: var(--mute)
     }
 
-    .hero-announcement {
-      width: min(100%, 760px);
-      margin: 0 auto 1rem;
-      text-align: center;
-      font: 400 clamp(1.2rem, 3.8vw, 2rem)/1.55 var(--serif)
-    }
-
     .names {
-      max-width: 960px;
+      max-width: 1100px;
       width: 100%;
-      margin: 0 auto;
-      font-size: clamp(4.2rem, 19vw, 12rem);
-      line-height: .92;
-      letter-spacing: -.02em
+      margin: 0 auto 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: clamp(1.8rem, 7vw, 5.5rem);
+      line-height: 1.2
     }
 
     .names .ln {
-      display: block;
+      flex: 1 1 0;
       overflow: hidden;
       padding: .04em 0
     }
 
     .names .ln i {
       display: block;
+      white-space: nowrap;
       font-style: normal;
       transform: translateY(105%);
       transition: transform 1s cubic-bezier(.2, .7, .1, 1)
     }
 
-    .names .l2 {
+    .names .l1 i {
       text-align: right
     }
 
-    .names .amp {
-      font: italic 400 .34em/1 var(--serif);
-      color: var(--gold2);
-      text-align: center;
-      padding: .5em 0
+    .names .l2 i {
+      text-align: left
+    }
+
+    .hero-parents {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font: 400 clamp(.95rem, 2.4vw, 1.4rem)/1.6 var(--serif);
+      color: var(--mute)
+    }
+
+    .hero-parents p {
+      margin: 0
+    }
+
+    .hero-parents strong {
+      color: var(--ink);
+      font-weight: 700
     }
 
     .go .ln i {
@@ -330,12 +344,8 @@
       transition-delay: .4s
     }
 
-    .go .amp i {
-      transition-delay: .6s
-    }
-
     .go .l2 i {
-      transition-delay: .8s
+      transition-delay: .6s
     }
 
     .hero .foot {
@@ -699,18 +709,19 @@
       }
 
       .hero .names {
-        font-size: clamp(3.5rem, 15vw, 5.5rem);
-        line-height: 1.15
+        font-size: clamp(1.25rem, 6vw, 2.5rem);
+        gap: .3rem
+      }
+
+      .hero-parents {
+        gap: .5rem;
+        font-size: clamp(.85rem, 3.5vw, 1rem)
       }
 
       .rows li,
       .sched li {
         grid-template-columns: 1fr;
         gap: .2rem
-      }
-
-      .names .l2 {
-        text-align: right
       }
     }
 
