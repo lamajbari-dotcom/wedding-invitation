@@ -274,6 +274,14 @@
       border-color: rgba(196, 149, 140, .22)
     }
 
+    .hero-verse {
+      width: min(100%, 900px);
+      margin: 0 auto 1.25rem;
+      text-align: center;
+      font: 400 clamp(1.05rem, 2.5vw, 1.55rem)/1.9 var(--serif);
+      color: var(--mute)
+    }
+
     .hero-announcement {
       width: min(100%, 760px);
       margin: 0 auto 1rem;
