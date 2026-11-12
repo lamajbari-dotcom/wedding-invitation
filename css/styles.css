@@ -281,6 +281,40 @@
       border-color: rgba(132, 96, 15, .2)
     }
 
+    .hero-verse-start {
+      width: min(100%, 900px);
+      margin: 0 auto .75rem;
+      text-align: center;
+      font-family: "Reem Kufi", var(--serif);
+      color: var(--gold2)
+    }
+
+    .ayah-end {
+      position: relative;
+      display: inline-grid;
+      width: 1.8em;
+      height: 1.8em;
+      margin: 0 .2em;
+      place-items: center;
+      color: #1b6b50;
+      font: 1rem/1 var(--serif);
+      vertical-align: middle;
+    }
+
+    .ayah-symbol,
+    .ayah-number {
+      grid-area: 1 / 1;
+    }
+
+    .ayah-symbol {
+      font-size: 1.8em;
+    }
+
+    .ayah-number {
+      font-size: .62em;
+      line-height: 1;
+    }
+
     .hero-verse {
       width: min(100%, 900px);
       margin: 0 auto .75rem;
@@ -346,7 +380,7 @@
 
     .names .name-title {
       display: block;
-      font-size: .34em;
+      font-size: .38em;
       line-height: 1.5
     }
 
@@ -354,7 +388,7 @@
       display: block;
       font-size: 1.15em;
       color: var(--gold);
-      font-family: "Reem Kufi", var(--serif)
+      font-family: "Aref Ruqaa", var(--serif)
     }
 
     .names .l1 i {
@@ -392,6 +426,7 @@
     .hero-parents strong {
       color: var(--ink);
       font-weight: 700;
+      font-size: 1.08em;
       text-wrap: balance
     }
 
@@ -800,7 +835,7 @@
 
       .hero-parents {
         gap: .4rem;
-        font-size: clamp(.78rem, 3.2vw, .95rem)
+        font-size: clamp(.84rem, 3.4vw, 1rem)
       }
 
       .hero-parents p {
