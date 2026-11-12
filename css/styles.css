@@ -25,7 +25,10 @@
 
     body {
       margin: 0;
-      background: var(--em);
+      background-color: var(--ivory);
+      background-image:
+        radial-gradient(ellipse 80% 40% at 50% 0%, rgba(236, 214, 151, .38), transparent 70%),
+        radial-gradient(ellipse 80% 35% at 50% 100%, rgba(236, 214, 151, .32), transparent 70%);
       color: var(--ink);
       font: 300 1.05rem/1.75 var(--sans);
       overflow-x: hidden
@@ -64,7 +67,10 @@
       position: fixed;
       inset: 0;
       z-index: 50;
-      background: var(--em);
+      background-color: var(--ivory);
+      background-image:
+        radial-gradient(ellipse 80% 40% at 50% 0%, rgba(236, 214, 151, .38), transparent 70%),
+        radial-gradient(ellipse 80% 35% at 50% 100%, rgba(236, 214, 151, .32), transparent 70%);
       display: grid;
       place-items: center;
       transition: opacity .5s ease .5s, visibility 0s 1s
@@ -254,7 +260,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 4.5rem 2rem 8rem;
-      background: radial-gradient(ellipse at 50% 35%, var(--em2), var(--em) 72%)
+      background: transparent
     }
 
     .hero::before,
@@ -480,7 +486,7 @@
     }
 
     .light {
-      background: var(--ivory);
+      background: transparent;
       color: var(--ink)
     }
 
@@ -804,7 +810,7 @@
       }
     }
 
-    /* roses + stacking */
+    /* Decorative layers */
     .hero,
     section,
     #intro {
@@ -815,76 +821,6 @@
 
     #intro {
       position: fixed
-    }
-
-    .rose {
-      position: absolute;
-      z-index: -1;
-      width: 200px;
-      aspect-ratio: 1;
-      pointer-events: none;
-      opacity: .6;
-      --r: 0deg;
-      transform: rotate(var(--r));
-      animation: sway 9s ease-in-out infinite alternate
-    }
-
-    .rose.lg {
-      width: 300px
-    }
-
-    .rose.sm {
-      width: 120px;
-      opacity: .45
-    }
-
-    .tl {
-      left: -70px;
-      top: -60px;
-      --r: -18deg
-    }
-
-    .tr {
-      right: -70px;
-      top: -60px;
-      --r: 22deg
-    }
-
-    .bl {
-      left: -70px;
-      bottom: -60px;
-      --r: 12deg
-    }
-
-    .br {
-      right: -70px;
-      bottom: -60px;
-      --r: -24deg
-    }
-
-    .rose.in1 {
-      left: 5%;
-      top: 29%;
-      --r: 30deg
-    }
-
-    .hero .rose.br,
-    #intro .rose.br {
-      width: 240px;
-      right: -110px;
-      bottom: -110px
-    }
-
-    .rose.in2 {
-      left: 7%;
-      bottom: 15%;
-      --r: -30deg
-    }
-
-    @keyframes sway {
-      to {
-        transform: rotate(calc(var(--r) + 7deg)) translateY(10px)
-      }
     }
 
     /* family names on the envelope */
