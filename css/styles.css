@@ -3,8 +3,8 @@
       --em2: #fffaf0;
       --ivory: #fffdf8;
       --ink: #3a2d12;
-      --gold: #db9a01;
-      --gold2: #c9a24a;
+      --gold: #c9a24a;
+      --gold2: #84600f;
       --mute: #766747;
       --serif: "Amiri", "Traditional Arabic", Georgia, serif;
       --sans: "Tajawal", system-ui, sans-serif;
@@ -162,10 +162,21 @@
       cursor: pointer;
       background: radial-gradient(circle at 32% 28%, #f3dc9b, #c9a24a 48%, #84600f);
       color: #3a2d12;
-      font: 500 1.25rem var(--serif);
+      font: 700 1.65rem/1 "Aref Ruqaa", var(--serif);
       box-shadow: 0 4px 14px rgba(58, 45, 18, .28), inset 0 0 0 5px rgba(255, 253, 248, .2), inset 0 0 0 6px rgba(132, 96, 15, .35);
       overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 0;
       transition: transform .3s, opacity .25s
+    }
+
+    .seal img {
+      display: block;
+      width: auto;
+      height: 48px;
+      object-fit: contain;
+      object-position: center
     }
 
     .seal::after {
@@ -322,6 +333,13 @@
       font-family: "Reem Kufi", var(--serif);
       color: var(--gold)
     }
+    /* .hero-verse-end {
+      width: min(100%, 900px);
+      margin: 0 auto 1.5rem;
+      text-align: center;
+      font-family: "Reem Kufi", var(--serif);
+      color: var(--gold2)
+    } */
 
     .names {
       max-width: 1100px;
@@ -387,8 +405,8 @@
     .names .person-name {
       display: block;
       font-size: 1.15em;
-      color: var(--gold);
-      font-family: "Aref Ruqaa", var(--serif)
+      color: var(--gold2);
+      /* font-family: "Aref Ruqaa", var(--serif) */
     }
 
     .names .l1 i {
@@ -802,6 +820,10 @@
     }
 
     @media (max-width:560px) {
+
+      .seal img {
+        height: clamp(42px, 12vw, 48px)
+      }
 
       .hero {
         padding: 2.5rem 1.25rem 5rem
