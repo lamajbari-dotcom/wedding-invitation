@@ -67,10 +67,11 @@
       position: fixed;
       inset: 0;
       z-index: 50;
-      background-color: var(--ivory);
-      background-image:
-        radial-gradient(ellipse 80% 40% at 50% 0%, rgba(236, 214, 151, .38), transparent 70%),
-        radial-gradient(ellipse 80% 35% at 50% 100%, rgba(236, 214, 151, .32), transparent 70%);
+      background-color: #000;
+      background-image: url("../images/flower-bg.jpeg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       display: grid;
       place-items: center;
       transition: opacity .5s ease .5s, visibility 0s 1s
@@ -260,7 +261,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 4.5rem 2rem 8rem;
-      background: transparent
+      background: url("../images/wrud2.jpeg") center/cover no-repeat;
     }
 
     .hero::before,
@@ -284,8 +285,8 @@
       width: min(100%, 900px);
       margin: 0 auto 1.25rem;
       text-align: center;
-      font: 400 clamp(1.05rem, 2.5vw, 1.55rem)/1.9 var(--serif);
-      color: var(--mute)
+      font-family: "Reem Kufi", var(--serif);
+      color: var(--gold)
     }
 
     .names {
@@ -304,6 +305,15 @@
       flex: 1 1 0;
       overflow: hidden;
       padding: .04em 0
+    }
+
+    .hero-announcement {
+      max-width: 960px;
+      width: 100%;
+      margin: 10 auto;
+      text-align: center;
+      font: 600 clamp(1.2rem, 3.5vw, 1.6rem)/1.45 var(--serif);
+      color: var(--mute);
     }
 
     .name-divider {
@@ -342,7 +352,9 @@
 
     .names .person-name {
       display: block;
-      font-size: 1.15em
+      font-size: 1.15em;
+      color: var(--gold);
+      font-family: "Reem Kufi", var(--serif)
     }
 
     .names .l1 i {
@@ -430,7 +442,8 @@
       border: 0;
       padding: .5rem 1rem;
       cursor: pointer;
-      color: var(--gold2);
+      /* color: var(--gold); */
+      color: #000;
       font: 300 .85rem var(--sans);
       letter-spacing: .14em;
       opacity: 0;
@@ -454,7 +467,7 @@
       display: block;
       width: 1px;
       height: 46px;
-      background: linear-gradient(var(--gold2), transparent);
+      background: linear-gradient(#000, transparent);
       animation: drop 2s ease-in-out infinite
     }
 
