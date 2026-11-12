@@ -260,7 +260,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 4.5rem 2rem 8rem;
+      padding: 3rem 2rem 6rem;
       background: url("../images/wrud2.jpeg") center/cover no-repeat;
     }
 
@@ -283,7 +283,7 @@
 
     .hero-verse {
       width: min(100%, 900px);
-      margin: 0 auto 1.25rem;
+      margin: 0 auto .75rem;
       text-align: center;
       font-family: "Reem Kufi", var(--serif);
       color: var(--gold)
@@ -292,7 +292,7 @@
     .names {
       max-width: 1100px;
       width: 100%;
-      margin: 0 auto 1.25rem;
+      margin: 0 auto .75rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -310,7 +310,7 @@
     .hero-announcement {
       max-width: 960px;
       width: 100%;
-      margin: 10 auto;
+      margin: .5rem auto;
       text-align: center;
       font: 600 clamp(1.2rem, 3.5vw, 1.6rem)/1.45 var(--serif);
       color: var(--mute);
@@ -410,8 +410,8 @@
     .hero .foot {
       max-width: 960px;
       width: 100%;
-      margin: 3.5rem auto 0;
-      padding-top: 1.4rem;
+      margin: 1.75rem auto 0;
+      padding-top: .75rem;
       border-top: 1px solid rgba(132, 96, 15, .35);
       display: flex;
       justify-content: space-between;
@@ -495,18 +495,22 @@
 
     /* ---------- Sections ---------- */
     section {
-      padding: 6rem 0
+      padding: 0.75rem 0
     }
 
     .light {
+      padding:0;
       background: transparent;
-      color: var(--ink)
+      color: var(--ink);
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+
     }
 
     h2 {
       font-size: clamp(2rem, 6vw, 3.2rem);
       line-height: 1.15;
-      margin-bottom: 1.5rem
+      margin-bottom: 1rem
     }
 
     .lede {
@@ -517,14 +521,14 @@
 
     .count {
       display: flex;
-      margin-top: 4rem;
-      border-top: 1px solid var(--gold);
-      border-bottom: 1px solid var(--gold)
+      /* margin-top: 1.5rem; */
+      /* border-top: 1px solid var(--gold); */
+      /* border-bottom: 1px solid var(--gold) */
     }
 
     .count div {
       flex: 1;
-      padding: 1.4rem 0;
+      padding: 1rem 0;
       text-align: center
     }
 
@@ -544,7 +548,7 @@
     }
 
     .rows {
-      margin: 2.5rem 0 0;
+      margin: 1.5rem 0 0;
       padding: 0;
       list-style: none;
       border-top: 1px solid rgba(132, 96, 15, .35)
@@ -554,7 +558,7 @@
       display: grid;
       grid-template-columns: minmax(7rem, 1fr) 3fr;
       gap: 1rem;
-      padding: 1.5rem 0;
+      padding: 1rem 0;
       border-bottom: 1px solid rgba(132, 96, 15, .3)
     }
 
@@ -573,7 +577,7 @@
 
     .calendar {
       width: min(100%, 620px);
-      margin: 2.5rem auto
+      margin: 1.5rem auto
     }
 
     .calendar table {
@@ -615,7 +619,7 @@
     }
 
     .map {
-      margin-top: 2rem
+      margin-top: 1.25rem
     }
 
     .map iframe {
@@ -747,7 +751,7 @@
     }
 
     footer {
-      padding: 3.5rem 1.5rem;
+      padding: 2rem 1.5rem;
       text-align: center;
       border-top: 1px solid rgba(132, 96, 15, .28);
       font: 400 1.6rem var(--serif);
@@ -765,12 +769,12 @@
     @media (max-width:560px) {
 
       .hero {
-        padding: 4rem 1.25rem 7rem
+        padding: 2.5rem 1.25rem 5rem
       }
 
       .hero .names {
         flex-direction: row;
-        gap: clamp(.3rem, 2vw, .8rem);
+        gap: clamp(.2rem, 1.5vw, .5rem);
         font-size: clamp(1.7rem, 7.5vw, 3.2rem);
         line-height: 1.1
       }
@@ -795,7 +799,7 @@
       }
 
       .hero-parents {
-        gap: .55rem;
+        gap: .4rem;
         font-size: clamp(.78rem, 3.2vw, .95rem)
       }
 
