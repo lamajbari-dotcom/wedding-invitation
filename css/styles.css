@@ -398,7 +398,7 @@
 
     .names .name-title {
       display: block;
-      font-size: .55em;
+      font-size: .65em;
       font-weight: 700;
       line-height: 1.4;
       color: #000;
@@ -451,7 +451,7 @@
     }
 
     .hero-parents .parent-title {
-      font-size: 1.2em;
+      font-size: 1.35em;
       font-weight: 700;
       color: var(--gold2)
     }
@@ -845,7 +845,7 @@
       }
 
       .hero .names .name-title {
-        font-size: .58em
+        font-size: .7em
       }
 
       .hero .names .ln {
